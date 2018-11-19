@@ -21,10 +21,14 @@
     "@angular/platform-browser-dynamic": "~7.0.0",
     "@angular/router": "~7.0.0",
     "@ionic-native/core": "5.0.0-beta.21",
+    "@ionic-native/facebook": "^5.0.0-beta.21",
+    "@ionic-native/google-plus": "^5.0.0-beta.21",
     "@ionic-native/splash-screen": "5.0.0-beta.21",
     "@ionic-native/status-bar": "5.0.0-beta.21",
     "@ionic/angular": "4.0.0-beta.16",
     "@ionic/pro": "2.0.3",
+    "cordova-plugin-facebook4": "3.1.0",
+    "cordova-plugin-googleplus": "5.3.2",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"
@@ -55,5 +59,16 @@
     "tslint": "~5.11.0",
     "typescript": "~3.1.6"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-facebook4": {
+        "APP_ID": "262571107787135",
+        "APP_NAME": "LegalBites"
+      },
+      "cordova-plugin-googleplus": {
+        "REVERSED_CLIENT_ID": "440503878558-oshtp40fr6rtg9q4mka9b1uue7no3mda.apps.googleusercontent.com"
+      }
+    }
+  }
 }
