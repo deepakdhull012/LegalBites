@@ -16,8 +16,8 @@ export class SignInPage implements OnInit, AfterViewInit {
 
   validationConfig: { [key: string]: any; } = {};
   loginForm: FormGroup;
-  keepMeLogin = false;
-  appName = 'Logical Studies';
+  keepMeLogin = true;
+  appName = 'LegalBites';
   passwordMode = 'password';
   colorRed = '#f00';
   @ViewChild('password', { read: ElementRef }) password: ElementRef;
@@ -38,10 +38,8 @@ export class SignInPage implements OnInit, AfterViewInit {
   }
   ngAfterViewInit() {
     this.passwordMode = this.password.nativeElement.attributes.type.nodeValue;
-    console.log(this.loginForm.get('email'));
   }
   login() {
-    console.log(this.loginForm.value, this.loginForm.valid);
     const loginFormValue = this.loginForm.value;
     const loginInfo = JSON.stringify({ email: loginFormValue.email, password: loginFormValue.password });
     this.signInService.loginUser(loginInfo).subscribe((loginResponse) => {

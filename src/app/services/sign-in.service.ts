@@ -5,7 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class SignInService {
-  server = 'https://agile-inlet-67707.herokuapp.com/api/';
+  server = 'willbeaddedsoon';
 
   constructor(private http: HttpClient) {
 

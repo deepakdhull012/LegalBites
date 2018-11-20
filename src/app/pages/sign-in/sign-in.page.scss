@@ -1,4 +1,4 @@
-$color-primary: #126092;
+$color-primary: #263238;
 $color-white: #fff;
 $color-red: #f00;
 $icon-size: 24px;
@@ -12,13 +12,8 @@ $margin-medium: 10px;
 $margin-large: 20px;
 $margin-extraLarge: 30px;
 
-$colors: (
-  facebook: #3b5998,
-  google: #DD4B39
-);
-
 .app-logo {
-  margin-top: $margin-extraLarge;
+  margin-top: $margin-large;
 }
 .login-form {
   margin-top: 40px;

@@ -1,5 +1,5 @@
 <ion-content padding>
-    <img class="app-logo" src="assets/imgs/logo2.png" />
+    <img class="app-logo" src="assets/images/Legal-Bites-logo.png" />
     <form class="login-form" [formGroup]="loginForm" (ngSubmit)="login()">
         <ion-item>
             <ion-label floating>
@@ -24,11 +24,11 @@
             </ion-label>
         </ion-item>
 
-        <ion-button expand="block" class="login-btn" type="submit" [disabled]="!loginForm.valid">Login</ion-button>
+        <ion-button expand="block" class="login-btn" color="primary" type="submit" [disabled]="!loginForm.valid">Login</ion-button>
 
         <ion-item lines="none" class="keep-me-login-holder">
             <ion-checkbox class="keep-me-login-box" formControlName="keepMeLogin"></ion-checkbox>
-            <ion-label class="font-primary">Keep me logged in</ion-label>
+            <ion-label>Keep me logged in</ion-label>
         </ion-item>
         <ion-item lines="none" text-center class="forgot-password" (click)="forgotPassword()">
             Forgot Password?
