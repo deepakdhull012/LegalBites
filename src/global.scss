@@ -1,11 +1,36 @@
 // http://ionicframework.com/docs/theming/
-@import '~@ionic/angular/css/core.css';
-@import '~@ionic/angular/css/normalize.css';
-@import '~@ionic/angular/css/structure.css';
-@import '~@ionic/angular/css/typography.css';
+@import "~@ionic/angular/css/core.css";
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
 
-@import '~@ionic/angular/css/padding.css';
-@import '~@ionic/angular/css/float-elements.css';
-@import '~@ionic/angular/css/text-alignment.css';
-@import '~@ionic/angular/css/text-transformation.css';
-@import '~@ionic/angular/css/flex-utils.css';
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+
+// http://ionicframework.com/docs/theming/
+$color-primary: #263238;
+
+$icon-size: 24px;
+
+$padding-small: 5px;
+$padding-medium: 10px;
+$padding-large: 15px;
+
+$margin-small: 5px;
+$margin-medium: 10px;
+$margin-large: 15px;
+
+.font-primary{
+  color: $color-primary;
+}
+
+.input-icon {
+  font-size: $icon-size;
+  padding-top: $padding-small;
+  color: $color-primary;
+}
